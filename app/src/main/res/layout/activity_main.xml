@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Load Data From Server"
+     android:id="@+id/loadDataButtonId"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressBarId"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:visibility="gone"
+       android:id="@+id/infoAreaId">
+
+       <!--Name-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Name: "
+           android:textStyle="bold"/>
+       <TextView
+           android:id="@+id/tvName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/loading"
+           android:background="#E91E63"
+           android:padding="8dp"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+           android:textStyle="bold" />
+
+       <!--Mobile-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Mobile: "
+           android:layout_marginTop="5dp"
+           android:textStyle="bold"/>
+       <TextView
+           android:id="@+id/tvMobile"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/loading"
+           android:background="#E91E63"
+           android:padding="8dp"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+           android:textStyle="bold" />
+
+       <!--Email-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Email: "
+           android:layout_marginTop="5dp"
+           android:textStyle="bold"/>
+       <TextView
+           android:id="@+id/tvEmail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/loading"
+           android:background="#E91E63"
+           android:padding="8dp"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+           android:textStyle="bold" />
+
+       <!--Address-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Address: "
+           android:layout_marginTop="5dp"
+           android:textStyle="bold"/>
+       <TextView
+           android:id="@+id/tvAddress"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/loading"
+           android:background="#E91E63"
+           android:padding="8dp"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+
+
+
+</LinearLayout>
